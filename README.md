@@ -38,7 +38,7 @@ The seeder creates a local test account: `test@example.com` with password `passw
 
 ### 3. Configure the AI assistant (optional)
 
-In `backend/.env`, set `GEMINI_API_KEY` to your own Gemini API key. Keep the key private and do not commit `.env` files. The model can be set with `GEMINI_MODEL`; it defaults to `gemini-2.5-flash`.
+In `backend/.env`, set `GEMINI_API_KEY` to your own Gemini API key. Keep the key private and do not commit `.env` files. The model can be set with `GEMINI_MODEL`; it defaults to `gemini-2.5-flash`. Set `GEMINI_FALLBACK_MODEL` to a different supported model if you want it used after a temporary provider capacity failure; it defaults to `gemini-2.5-flash`.
 
 ### 4. Install frontend packages
 
